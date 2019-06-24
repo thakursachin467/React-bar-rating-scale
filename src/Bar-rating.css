@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.heading {
+  padding: 2px;
+}
+
+.heading p {
+  margin: 10px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+.rating {
+  position: relative;
+  margin-top: 10px;
+  padding: 0;
+  border: 1px #000 solid;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  background: linear-gradient(to right, #f00, #ff0, #0f0);
+}
+.box {
+  width: auto;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.rating input {
+  display: none;
+}
+.rating label {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  transition: 0.5s;
+  align-items: center;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  border-right: 1px solid #000;
+}
+.rating label {
+  border-left: 1px #999 solid;
+  transition: 0.3s;
+}
+
+input[type="radio"]:hover ~ label,
+input[type="radio"]:checked ~ label {
+  background: transparent;
+  color: #fff;
+}
